@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				border: 1px solid #000;
+				width: 250px;
+			}
+			li{
+				list-style: none;
+			}
+			.color{
+				background-color: lightseagreen;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="text" name="" id="txt" value="" />
+		<input type="button" name="" id="btn" value="百度一下" />
+		<ul id="list">
+		</ul>
+		<!--<a href="http://www.baidu.com">fsf</a>-->
+		<!--<img src="http://image.baidu.com/search/detail?ct=503316480&z=undefined&tn=baiduimagedetail&ipn=d&word=%E5%9B%BE%E7%89%87&step_word=&ie=utf-8&in=&cl=2&lm=-1&st=undefined&cs=4271053251,2424464488&os=2375022793,1835605452&simid=4247939438,550168575&pn=0&rn=1&di=157070280620&ln=1986&fr=&fmq=1495592788263_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&is=0,0&istype=0&ist=&jit=&bdtype=0&spn=0&pi=0&gsm=0&objurl=http%3A%2F%2Fpic55.nipic.com%2Ffile%2F20141208%2F19462408_171130083000_2.jpg&rpstart=0&rpnum=0&adpicid=0" />-->
+		<!--<iframe src="http://www.baidu.com" width="1200px" height="500px" border="1px solid #000">fgtfg</iframe>-->
+		
+			
+		<!--<script type="text/javascript" src="tk.txt" charset="utf-8"></script>-->
+		<!--<script type="text/javascript" src="jsonp.php" charset="utf-8"></script>-->
+		
+		<!--<script src="jsonp.php" type="text/javascript" charset="utf-8"></script>-->
+
+		<script type="text/javascript">
+            var btn = document.querySelectorAll("input")[1];
+            var txt = document.querySelectorAll("input")[0];
+            var list = document.querySelector("ul");
+            var num = -1;
+			function fn(a){
+	           	console.log(a);
+	           	var aa = document.querySelector("#aa");
+	           	list.innerHTML = "";
+	           	for(var i=0;i<a.s.length;i++){
+	           		list.innerHTML += "<li><a href='https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd="+a.s[i]+"'>"+a.s[i]+"</a></li>"
+	           	}
+	           	aa.remove();
+	           	document.onkeydown = function(ev){
+	           		var ev = ev||window.event;
+	           		var oLis = list.querySelectorAll("li");
+	           		if(ev.keyCode == 40){
+	           			for(var i=0;i<oLis.length;i++){
+	           				oLis[i].setAttribute("class","")
+	           			}
+	           			num++;
+	           			if(num == oLis.length){
+	           				num = 0;
+	           			}
+	           			oLis[num].setAttribute("class","color")
+	           		}
+	           		if(ev.keyCode == 38){
+	           			for(var i=0;i<oLis.length;i++){
+	           				oLis[i].setAttribute("class","")
+	           			}
+	           			num--;
+	           			if(num == -2){
+	           				num = oLis.length-1;
+	           			}
+	           			oLis[num].setAttribute("class","color")
+	           		}
+	           	}
+	        }
+           	btn.onclick = function(){
+           		var oS = document.createElement("script");
+           		oS.setAttribute("id","aa")
+           		oS.src = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+txt.value+"&cb=fn";
+           		document.body.appendChild(oS);
+           	}
+           	
+           //&callback
+		</script>
+		<!--<script type="text/javascript" src="jsonp1.php?num=1&cb=fn" charset="utf-8"></script>-->
+	</body>
+</html>
+
