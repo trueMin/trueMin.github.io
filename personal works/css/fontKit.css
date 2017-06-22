@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+  
+@font-face {
+	font-family: 'Museo-300';
+	src: url('../fonts/281EAB_0_0.eot');
+	src: url('../fonts/281EAB_0_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/281EAB_0_0.woff') format('woff'),
+	url('../fonts/281EAB_0_0.ttf') format('truetype');
+}
+ 
+  
+@font-face {
+	font-family: 'Museo-500';
+	src: url('../fonts/281EAB_1_0.eot');
+	src: url('../fonts/281EAB_1_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/281EAB_1_0.woff') format('woff'),
+	url('../fonts/281EAB_1_0.ttf') format('truetype');
+}
+ 
+  
+@font-face {
+	font-family: 'MuseoSans-500';
+	src: url('../fonts/281EAB_2_0.eot');
+	src: url('../fonts/281EAB_2_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/281EAB_2_0.woff') format('woff'),
+	url('../fonts/281EAB_2_0.ttf') format('truetype');
+}
+ 
+  
+@font-face {
+	font-family: 'MuseoSlab-500';
+	src: url('../fonts/281EAB_3_0.eot');
+	src: url('../fonts/281EAB_3_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/281EAB_3_0.woff') format('woff'),
+	url('../fonts/281EAB_3_0.ttf') format('truetype');
+}
+ 
+  
+@font-face {
+	font-family: 'MuseoSlab-500Italic';
+	src: url('../fonts/281EAB_4_0.eot');
+	src: url('../fonts/281EAB_4_0.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/281EAB_4_0.woff') format('woff'),
+	url('../fonts/281EAB_4_0.ttf') format('truetype');
+}
+ 

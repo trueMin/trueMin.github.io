@@ -1,0 +1,585 @@
+html, body {
+    overflow-x: hidden;
+}
+html {
+    position: relative;
+    min-height: 100%;
+    background: #92c3e9 repeat-x fixed;
+    background: -moz-linear-gradient(top, #53a7e8 0%, #92c3e9 50%) repeat-x fixed;
+    background: -webkit-linear-gradient(top, #53a7e8 0%,#92c3e9 50%) repeat-x fixed;
+    background: -o-linear-gradient(top, #53a7e8 0%,#92c3e9 50%) repeat-x fixed;
+    background: -ms-linear-gradient(top, #53a7e8 0%,#92c3e9 50%)repeat-x fixed;
+    background: linear-gradient(to bottom, #53a7e8 0%,#92c3e9 50%) repeat-x fixed;
+    background-color:#92c3e9;
+}
+body {
+    width: 100%;
+    min-height: 100%;
+    padding: 94px 0 431px;
+    color: #2960a2;
+    font-family: MuseoSans-500, sans-serif;
+    font-size: 62.5%;
+    font-size: 1em;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.45);
+    background-image: url('../imgs/snow01.png'), url('../imgs/snow02.png'), url('../imgs/snow03.png');
+    /*动画：降雪30s线性无穷*/
+    -webkit-animation: snowFall 30s linear infinite;
+	-moz-animation: snowFall 30s linear infinite;
+	-ms-animation: snowFall 30s linear infinite;
+	-o-animation: snowFall 30s linear infinite;
+	animation: snowFall 30s linear infinite;
+}
+-moz-selection{
+    background:#fde4a1;
+}
+-o-selection{
+    background:#fde4a1;
+}
+-ms-selection{
+    background:#fde4a1;
+}
+-webkit-selection{
+    background:#fde4a1;
+}
+selection{
+    background:#fde4a1;
+}
+@-webkit-keyframes snowFall {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+@-ms-keyframes snowFall {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+@-moz-keyframes snowFall {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+@-o-keyframes snowFall {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+@keyframes snowFall {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}  
+}
+body header:nth-child(1) {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    background: #d6e8f8;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: right;
+    padding: 10px 40px;
+    z-index: 1000;
+}
+body header:nth-child(1) p {
+    display: inline;
+    position: relative;
+    right: 20px;
+    bottom: 2px;
+    font-size: 1.3em;
+    font-family: MuseoSlab-500, sans-serif;
+}
+body header:nth-child(1) p:nth-child(1) {
+    position:absolute;
+    width: 55px;
+    left: 0;
+    top: 0;
+    padding: 11px 20px 12px 100px;
+    top: 1px;
+    border-radius: 0 25px 25px 0;
+}
+span.dancing{
+    opacity:.8;
+    font-family: 'Dancing Script', sans-serif;
+    padding-right:30px;
+}
+nav {
+    position:fixed;
+    display: block;
+    top:59px;
+    right: 0;
+    display: block;
+    z-index: 1000;
+    min-width: 661px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: white;
+    text-shadow: none;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 0 0 30px 30px;
+    font-family: MuseoSlab-500, sans-serif;
+}
+nav ul li:nth-child(1) a {
+    background: rgba(41,96,162,0.6);
+}
+nav ul li:nth-child(2) a {
+    background: rgba(219,128,41,0.6);
+}
+nav ul li:nth-child(3) a {
+    background: rgba(193,85,141,0.6);
+}
+nav ul li:nth-child(4) a {
+    background: rgba(104,107,177,0.6);
+}
+nav ul li:nth-child(5) a {
+    background: rgba(0,182,173,0.6);
+}
+article {
+    display: block;
+    position: relative;
+    width: 60%;
+    min-width: 500px;
+    margin: 0px 20% 10px 20%;
+    margin-bottom: -70px;
+    padding-top: 100px;
+}
+.orange, article.character h1, article.character p:first-letter {
+    color:#db8029;
+}
+.pink, article.illustration h1, article.illustration p:first-letter {
+    color:#c1558d;
+}
+.green, article.installation h1, article.installation p:first-letter {
+    color:#00b6ad;
+}
+.red, article.game h1, article.game p:first-letter {
+    color:#c14142;
+}
+.purple, article.animation h1, article.animation p:first-letter {
+    color:#686bb1;
+}
+article#about {
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 100px
+}
+article#about p {
+    font-family: MuseoSlab-500, sans-serif;
+    font-size: 2em;
+    margin:0;
+    padding:0;
+}
+article#about p.left {
+    position: relative;
+    right: 108px;
+}
+article#about p.mid {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 10em;
+    text-shadow: 5px 5px 10px rgba(255,255,255, .6);
+    margin: 25px 0;
+    margin-top: -20px;
+    padding:0;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -ms-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+article#about p.right {
+    position: relative;
+    left: 94px;
+    top: 10px;
+    margin-bottom: 40px;
+}
+article#about img.line {
+    width: 45%;
+    min-width: 530px;
+    height: 3px;
+    display: block;
+    position: relative;
+    margin: 45px auto -48px auto;
+}
+article#about img.line:nth-of-type(2) {
+    top: -15px;
+}
+article#about p.dancing {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.2em;
+    padding:30px 15px 30px 15px;
+}
+article#about p.upper {
+    font-family: MuseoSlab-500, sans-serif;
+    text-transform: uppercase;/*定义文本仅有大写字母*/
+    font-size: 3.8em;
+    position: relative;
+    top: -6px;
+    min-width: 500px;
+    white-space: nowrap;/*规定段落中的文本不进行换行*/
+}
+article#about p.upper img {
+    position: relative;
+    top: 14px;
+    margin: 0 3px;
+    display: inline-block;
+}
+article#about p.intro {
+    width: 510px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    margin-left: -255px;
+    font-family: Museo-300, sans-serif;
+    line-height:1.5em;
+    font-size:1.3em;
+    opacity:.975;
+    text-align: center;
+    letter-spacing:.100em;/*字符间距0.1rem*/
+    padding-bottom:34px;
+}
+article#about p.intro a {
+    opacity:.8;
+    font-family: Museo-500, sans-serif;
+    padding: 0 2px;
+}
+ article#about img.star {
+    position: relative;
+    margin: 13px auto 0 auto;
+}
+article h1 {
+    font-family: MuseoSlab-500, sans-serif;
+    font-size: 3.8em;
+    white-space: nowrap;
+    text-align: center;
+    padding-bottom: 4px;
+    opacity: 0.975;
+}
+article h2 {
+    display: block;
+    position:absolute;
+    right: -10px;
+    top: 230px;
+    z-index: 100;
+    font-family: MuseoSlab-500, sans-serif;
+    color: white;
+    text-shadow: none;
+    padding: 15px 20px 10px 20px;
+    border-radius: 0 0 15px 0;
+    border-left: 25px solid transparent;
+    box-shadow: 2px 2px 2px #888;
+}
+article.project h2:before {
+    display: block;
+    position: absolute;
+    right: 0;
+    top:-14px;
+    width: 10px;
+    height: 24px;
+    z-index: -1;
+}
+article.character h2 {
+    background: #db8029;
+    -webkit-border-image:url('../imgs/border_orange.png') 0 22 stretch;
+    -moz-border-image:url('../imgs/border_orange.png') 0 22 stretch;
+    -ms-border-image:url('../imgs/border_orange.png') 0 22 stretch;
+    -o-border-image:url('../imgs/border_orange.png') 0 22 stretch; 
+    border-image:url('../imgs/border_orange.png') 0 22 stretch;
+}
+article.character h2:before {
+    content: url('../imgs/before_orange2.png');
+}
+article.illustration h2 {
+    background: #c1558d;
+    -webkit-border-image:url('../imgs/border_pink.png') 0 22 stretch;
+    -o-border-image:url('../imgs/border_pink.png') 0 22 stretch; 
+    -ms-border-image:url('../imgs/border_pink.png') 0 22 stretch; 
+    -moz-border-image:url('../imgs/border_pink.png') 0 22 stretch; 
+    border-image:url('../imgs/border_pink.png') 0 22 stretch;
+}
+article.illustration h2:before {
+    content: url('../imgs/before_pink.png');
+}
+article.animation h2 {
+    background: #686bb1;
+    -webkit-border-image:url('../imgs/border_purple.png') 0 22 stretch;
+    -o-border-image:url('../imgs/border_purple.png') 0 22 stretch; 
+    -moz-border-image:url('../imgs/border_purple.png') 0 22 stretch; 
+    -ms-border-image:url('../imgs/border_purple.png') 0 22 stretch; 
+    border-image:url('../imgs/border_purple.png') 0 22 stretch;
+}
+article.animation h2:before {
+    content: url('../imgs/before_purple.png');
+}
+article.installation h2 {
+    background: #00b6ad;
+    -webkit-border-image:url('../imgs/border_green.png') 0 22 stretch;
+    -o-border-image:url('../imgs/border_green.png') 0 22 stretch; 
+    -moz-border-image:url('../imgs/border_green.png') 0 22 stretch; 
+    -ms-border-image:url('../imgs/border_green.png') 0 22 stretch; 
+    border-image:url('../imgs/border_green.png') 0 22 stretch;
+}
+article.installation h2:before {
+    content: url('../imgs/before_green.png');
+}
+article.game h2 {
+    background: #c14142;
+    -webkit-border-image:url('../imgs/border_red.png') 0 22 stretch;
+    -o-border-image:url('../imgs/border_red.png') 0 22 stretch; 
+    -moz-border-image:url('../imgs/border_red.png') 0 22 stretch; 
+    -ms-border-image:url('../imgs/border_red.png') 0 22 stretch; 
+    border-image:url('../imgs/border_red.png') 0 22 stretch;
+}
+article.game h2:before {
+    content: url('../imgs/before_red.png');
+}
+article.project h2 { 
+    background-clip:padding-box;/*背景被裁剪到内边距框*/
+}
+article.project img.line {
+    width: 100%;
+    min-width: 530px;
+    height: 3px;
+    display: block;
+    position: relative;
+    margin: 10px auto 10px auto;
+}
+article.project p {
+    width:100%;
+    padding: 15px 0;
+    font-family: Museo-300, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    letter-spacing: 0.07em;
+    opacity: 0.975;
+    text-align: center;
+}
+article.project p:first-letter {
+    font-size: 1.5em;
+    font-family: 'Dancing Script', sans-serif;
+}
+article.project p a{
+    font-family: Museo-500, sans-serif;
+}
+ article.project img.star {
+    position: relative;
+    margin: 15px 50%;
+    left: -16px;
+    top: -10px;
+}
+article.project img.projectImg {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px 0 0 0;
+}
+article.project a span.zoom {
+    display: none;
+    margin-left:100%;
+    left:-80px;
+    top:-90px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 411px;
+    width: 100%;
+    margin-top:20px;
+    overflow:hidden;
+}
+footer ul {
+    background: url("../imgs/foreground.png") repeat-x;
+    display:block;
+    width:100%;
+    height:100%;
+}
+footer ul li {
+    display: inline;
+    width: 14%;
+}
+footer ul li img {
+    border: none;
+    padding-left: 8px;
+}
+footer ul li img#lizzie-bo-peep{
+    position:absolute;
+    bottom:0;
+    left:70px;
+}
+footer ul li img#twitter{
+    position:absolute;
+    bottom:90px;
+    left:370px;
+}
+footer ul li img#linkedin{
+    position: absolute;
+    bottom:110px;
+    left:570px;
+    width:100px;
+}
+footer ul li img#pinterest{
+    position:absolute;
+    bottom:40px;
+    left:890px;
+    width:120px;
+}
+footer ul li img#vimeo{
+    position:absolute;
+    bottom:20px;
+    left:1200px;
+}
+footer p#copyright{
+    position: absolute;
+    bottom: 0;
+    padding-top:45px;
+    display: block;
+    width: 100%;
+    height: 16px;
+    text-shadow: none;
+    font-size: 0.7em;
+    text-align: center;
+    z-index: 14;
+}
+.desktop {
+    display: none;
+}
+@media screen and (max-width:832px) {
+    article {
+        margin: 0 50% 250px 50%;
+        left: -250px;
+    }
+    article img.line {
+        left: -15px;
+    }
+}
+@media screen and (min-width:1224px) and (min-height:650px) {
+    html {
+        background:url('../imgs/mountains.png') repeat-x bottom left fixed, -moz-linear-gradient(top, #53a7e8 0%, #92c3e9 50%)    repeat-x fixed;
+        background:url('../imgs/mountains.png') repeat-x bottom left fixed, -webkit-linear-gradient(top, #53a7e8 0%, #92c3e9 50%) repeat-x fixed;
+        background:url('../imgs/mountains.png') repeat-x bottom left fixed, -o-linear-gradient(top, #53a7e8 0%, #92c3e9 50%)      repeat-x fixed;
+        background:url('../imgs/mountains.png') repeat-x bottom left fixed, -ms-linear-gradient(top, #53a7e8 0%, #92c3e9 50%)     repeat-x fixed;
+        background:url('../imgs/mountains.png') repeat-x bottom left fixed, linear-gradient(to bottom, #53a7e8 0%, #92c3e9 50%)   repeat-x fixed;
+    }
+    .desktop {
+        display:block;
+    }
+    body header:nth-child(1) p:nth-child(1) {
+        background: #2960a2;
+        color: white;
+        text-shadow: none;
+    }
+    nav {
+        top: auto;
+        bottom: 0;
+        right: 90px;
+        min-width: 0;
+        height: 505px;
+        padding-top:58px;
+        background: url('../imgs/postLarge.png') no-repeat; 
+        background-position: bottom; 
+    }
+    nav ul li {
+        display: block;
+        margin-right:-12px;
+    }
+    nav ul li a{
+        border-radius: 0;
+        width: 209px;
+        height: 52px;
+        text-align: center;
+        padding: 22px 0 0 0;
+        right: -6px;
+        display: block;
+        position: relative;
+        color: #675D3A;
+        font-size: 1.2em;
+        text-shadow: inherit;/*文字阴影继承*/
+    }
+    nav ul li:nth-child(1) a,
+    nav ul li:nth-child(2) a,
+    nav ul li:nth-child(3) a,
+    nav ul li:nth-child(4) a,
+    nav ul li:nth-child(5) a,
+    nav ul li:nth-child(6) a {
+        background:none;
+    }
+    nav ul li:nth-child(odd) {
+        background: url('../imgs/signSprite_odd.png') no-repeat;
+    }
+    nav ul li:nth-child(odd) a {
+        -webkit-transform: rotate(.25deg);
+        -moz-transform: rotate(.25deg);
+        -ms-transform: rotate(.25deg);
+        -o-transform: rotate(.25deg);
+        transform: rotate(.25deg);
+    }
+    nav ul li:nth-child(even) {
+        background: url('../imgs/signSprite_even.png') no-repeat;
+    }
+    nav ul li:nth-child(even) a {
+        -webkit-transform: rotate(4.85deg);
+        -moz-transform: rotate(4.85deg);
+        -ms-transform: rotate(4.85deg);
+        -o-transform: rotate(4.85deg);
+        transform: rotate(4.85deg);
+    }
+    nav ul li.about.current,
+    nav ul li.illustration.current,
+    nav ul li.installation.current {
+        background-position: 0px -144px;
+    }
+    nav ul li.character.current,
+    nav ul li.animation.current,
+    nav ul li.game.current {
+        background-position: 0px -144px;
+    }
+    #tree {
+        position:fixed;
+        top: 100px;
+        left: 140px;
+        z-index: 1000;
+    }
+    article{
+        margin-bottom: 350px;
+        padding-top: 50px;
+    }
+    article h2 {
+        right: -10px;
+        top: 182px;
+    }
+    article#about {
+        margin-top: -60px;  
+    }
+    article.project{
+        width: 45%;
+        margin-left: 27.5%;
+    }
+    footer {
+        position: fixed;
+        z-index:15;
+    }
+    footer {
+        background: none;
+    }
+    footer:before {
+        display:block;
+        content:"";
+        width:100%;
+        height:422px;
+        position:absolute;
+        bottom:0;
+        left:0;
+        z-index:8;
+    }
+    footer ul {
+        position:relative;
+        z-index:12;
+    }
+    body>article {
+        position:relative;
+        z-index:10;
+    }
+    body>article:last-of-type{
+        padding-bottom: 0;
+        margin-bottom: -180px;
+    }
+}

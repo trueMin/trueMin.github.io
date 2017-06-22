@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background-color: #EEEEEE;
+			}
+			.headyi{
+				width: 26.125rem;
+				height: 6.25rem;
+				padding: 0.0rem 0.438rem;
+				background: #fff;
+			}
+			.hul{
+				list-style: none;
+			}
+			.hul li{
+				float: left;
+				padding: 1.0rem 1.7rem;
+			}
+			.hul li img{
+				display: block;
+				float: left;
+				width: 3.12rem;
+				height: 3.12rem;
+			}
+			.hul li span{
+				display: block;
+			}
+			.header{
+				width: 26.125rem;
+				height: 12.25rem;
+				padding: 0.0rem 0.438rem;
+				margin-top: 1.0rem;
+			}
+			.header .htop{
+				width: 26.125rem;
+				height: 3.125rem;
+			}
+			.header .htop span{
+				font-size: 1.675rem;
+				float: left;
+			}
+			.header .htop img{
+				float: left;
+				transform: translateY(0.28rem);
+				margin-left: 1.0rem;
+			}
+			.header .htop .htul{
+				float: left;
+				list-style: none;
+				margin-left: 0.6rem;
+			}
+			.header .htop .htul li{
+				float: left;
+				padding: 0.2rem 0.3rem;
+				background-color: black;
+				color: #fff;
+				margin: 0.0rem 0.06rem;
+				transform: translateY(0.3rem);
+				font-size: 1.2rem;
+				border-radius: 10%;
+			}
+			.header .htop .htul li:nth-of-type(3),.header .htop .htul li:nth-of-type(6){
+				background-color: transparent;
+				color: #000;
+				margin: 0.0rem 0.0rem;
+				padding: 0.0rem 0.0rem;
+				font-weight: bold;
+			}
+			.hul1{
+				height: 8.8rem;
+				width: 26.125rem;
+				/*padding: 0.0rem 0.3rem;*/
+				list-style: none;
+			}
+			.hul1 li{
+				float: left;
+				width: 8.21rem;
+				height: 8.8rem;
+			}
+			.hul1 li img{
+				width: 7.92rem;
+				height: 6.0rem;
+			}
+			.hul1 li .price{
+				display: block;
+				font-size: 1.2rem;
+				color: #f00;
+				padding-left: 2.0rem;
+			}
+			
+			
+			/*.banner{
+				width: 26.125rem;
+				height: 6.3rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.banner li{
+				list-style: none;
+				width: 26.125rem;
+				height: 6.3rem;
+			}
+			.banner img{
+				width: 26.125rem;
+				height: 6.3rem;
+				display: block;
+			}*/
+			
+			
+			
+			.body{
+				width: 26.125rem;
+				height: 6.3rem;
+				overflow: hidden;
+				padding: 0.0rem 0.438rem;
+			}
+			.list{
+				width:400%;
+				transition: 1s;
+				height: 6.3rem;
+			}
+			.list li{
+				list-style: none;
+				width:25%;
+				float:left;
+				height: 6.3rem;
+			}
+			.list li img{
+				width:26.125rem;
+				height: 6.3rem;
+				display: block;
+				border:none;
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			.bd1{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd1 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd1 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd1 .bdt p{
+				float: right;
+			}
+			.bd1 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd1 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd1 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd1 ul li{
+				float: left;
+			}
+			.bd1 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd1 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+				
+			}
+			.bd1 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			
+			.bd2{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd2 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd2 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd2 .bdt p{
+				float: right;
+			}
+			.bd2 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd2 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd2 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd2 ul li{
+				float: left;
+			}
+			.bd2 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd2 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+				
+			}
+			.bd2 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			.bd3{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd3 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd3 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd3 .bdt p{
+				float: right;
+			}
+			.bd3 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd3 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd3 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd3 ul li{
+				float: left;
+			}
+			.bd3 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd3 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+				
+			}
+			.bd3 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			
+			.bd4{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd4 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd4 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd4 .bdt p{
+				float: right;
+			}
+			.bd4 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd4 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd4 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd4 ul li{
+				float: left;
+			}
+			.bd4 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd4 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			.bd4 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			
+			.bd5{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd5 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd5 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd5 .bdt p{
+				float: right;
+			}
+			.bd5 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd5 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd5 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd5 ul li{
+				float: left;
+			}
+			.bd5 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd5 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+				
+			}
+			.bd5 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			.bd6{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd6 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd6 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd6 .bdt p{
+				float: right;
+			}
+			.bd6 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd6 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd6 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd6 ul li{
+				float: left;
+			}
+			.bd6 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd6 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			.bd6 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			.bd7{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd7 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd7 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd7 .bdt p{
+				float: right;
+			}
+			.bd7 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd7 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd7 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd7 ul li{
+				float: left;
+			}
+			.bd7 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd7 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			.bd7 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			.bd8{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd8 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd8 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd8 .bdt p{
+				float: right;
+			}
+			.bd8 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd8 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd8 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd8 ul li{
+				float: left;
+			}
+			.bd8 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd8 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			.bd8 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			.bd9{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd9 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd9 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd9 .bdt p{
+				float: right;
+			}
+			.bd9 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd9 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd9 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd9 ul li{
+				float: left;
+			}
+			.bd9 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd9 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			.bd9 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			
+			.bd10{
+				width: 26.125rem;
+				height: 22.0rem;
+				padding: 0.0rem 0.438rem;
+			}
+			.bd10 .bdt{
+				width: 26.125rem;
+				height: 5.0rem;
+				line-height: 5.0rem;
+			}
+			.bd10 .bdt h2{
+				margin-left: 0.3rem;
+				display: inline;
+			}
+			.bd10 .bdt p{
+				float: right;
+			}
+			.bd10 .bdt span:nth-of-type(1){
+				font-size: 1.4rem;
+				color: #f00;
+				font-weight: bold;
+			}
+			.bd10 .bdt span:nth-of-type(2){
+				font-size: 1.4rem;
+				font-weight: bold;
+				background-color: #f00;
+				color: #fff;
+				border-radius: 10%;
+				margin-left: 0.3rem;
+				padding: 0.0rem 0.3rem;
+				line-height: 2.0rem;
+			}
+			.bd10 ul{
+				height: 17.0rem;
+				width: 26.125rem;
+				list-style: none;
+			}
+			.bd10 ul li{
+				float: left;
+			}
+			.bd10 ul li:nth-of-type(1) img{
+				width: 13.0625rem;
+				height: 17.0rem;
+				float: left;
+			}
+			.bd10 ul li:nth-of-type(2) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			.bd10 ul li:nth-of-type(3) img{
+				float: right;
+				width: 13.0625rem;
+				height: 8.4275rem;
+			}
+			.Aside{
+				width: 26.125rem;
+				padding: 0.0rem 0.438rem;
+				height: 38.875rem;
+			}
+			.Aside .Ast{
+				height: 2.875rem;
+				width: 26.125rem;
+			}
+			.Aside ul{
+				width: 26.125rem;
+				height: 36.0rem;
+				/*background-color: red;*/
+				list-style: none;
+			}
+			.Aside ul li{
+				float: left;
+				width: 13.0625rem;
+				height: 6.0rem;
+			}
+			.Aside ul li .left{
+				float: left;
+			}
+			
+			.Aside ul li .left p:nth-of-type(1){
+				font-weight: 800;
+				color: black;
+				margin: 1.5rem 0.0rem 0.0rem 0.8rem;
+			}
+			.Aside ul li .left p:nth-of-type(2){
+				color: black;
+				font-weight: 300;
+				margin: 0.0rem 0.0rem 0.0rem 0.8rem;
+			}
+			.Aside ul li img{
+				width: 5.25rem;
+				height: 6.0rem;
+				float: right;
+			}
+			.act{
+				margin-left: 0.0rem;
+				width: 4.0rem;
+				
+			}
+			
+			footer{
+				height: 13.5rem;
+				width: 26.125rem;
+				padding: 0.0rem 0.438rem;
+			}
+			footer .ft{
+				width: 100%;
+				height: 3.75rem;
+				border-bottom: 1px solid grey;
+				line-height: 3.75rem;
+			}
+			footer .ft .ftl{
+				float: left;
+				list-style: none;
+			}
+			footer .ft .ftl li{
+				float: left;
+				font-size: 1.6rem;
+				margin-left: 1.0rem;
+			}
+			footer .ft .ftr{
+				float: right;
+			}
+			footer .ft .ftr span{
+				margin-left: 0.6rem;
+				font-size: 1.5rem;
+			}
+			footer .fm{
+				width: 100%;
+				height: 6.0rem;
+				border-bottom: 1px solid grey;
+			}
+			footer .fm ul{
+				list-style: none;
+				width: 100%;
+				height: 3.0rem;
+				line-height: 3.0rem;
+			}
+			footer .fm ul li{
+				font-size: 1.4rem;
+				float: left;
+				padding-right: 1.2rem;
+			}
+			footer .fm ul .col{
+				color: #f00;
+			}
+			footer .fm p{
+				height: 3.0rem;
+				width: 100%;
+				line-height: 3.0rem;
+				font-size: 1rem;
+			}
+			footer .fb{
+				height: 3.75rem;
+				width: 100%;
+				line-height: 3.75rem;
+			}
+			footer .fb ul{
+				list-style: none;
+			}
+			footer .fb ul li{
+				float: left;
+				padding-right: 1.2rem;
+			}
+			footer .fb ul li img{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="headyi">
+			<ul class="hul">
+				<li><a href="#"><img src="img/Screen_28.png"/></a><span class="htxt">好书榜</span></li>
+				<li><a href="#"><img src="img/Screen_33.png"/></a><span class="htxt">童书榜</span></li>
+				<li><a href="#"><img src="img/Screen_37.png"/></a><span class="htxt">九块九</span></li>
+				<li><a href="#"><img src="img/Screen_41.png"/></a><span class="htxt">电子书</span></li>
+			</ul>
+		</header>
+		<header class="header">
+			<div class="htop">
+				<span>秒杀</span>
+				<img src="img/Screen_74.png"/>
+				<ul class="htul clearfix">
+					<li>0</li>
+					<li>0</li>
+					<li>:</li>
+					<li>4</li>
+					<li>6</li>
+					<li>:</li>
+					<li>4</li>
+					<li>6</li>
+				</ul>
+			</div>
+			<ul class="hul1 clearfix">
+				<li><a href="#"><img src="img/Screen_117.png"/></a><span class="price">&yen;1.00</span></li>
+				<li><a href="#"><img src="img/Screen_118.png"/></a><span class="price">&yen;1.00</span></li>
+				<li><a href="#"><img src="img/Screen_119.png"/></a><span class="price">&yen;52.10</span></li>
+			</ul>
+		</header>
+		
+		
+		<div class="body">
+			<ul class="list">
+				<li><img src="img/Screen_146.png"/></li>
+				<li><img src="img/Screen_146.png"/></li>
+				<li><img src="img/Screen_146.png"/></li>
+				<li><img src="img/Screen_146.png"/></li>
+			</ul>
+		</div>
+		
+		
+		<article class="bd1">
+			<div class="bdt">
+				<h2>最值当</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_173.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_174.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_177.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd2">
+			<div class="bdt">
+				<h2>尾品汇</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_204.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_205.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_208.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd3">
+			<div class="bdt">
+				<h2>发现好书</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_235.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_236.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_239.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd4">
+			<div class="bdt">
+				<h2>缤纷童书</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_266.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_267.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_270.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd5">
+			<div class="bdt">
+				<h2>潮流服饰</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_297.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_298.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_301.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd6">
+			<div class="bdt">
+				<h2>运动.亲子</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_328.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_329.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_332.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd7">
+			<div class="bdt">
+				<h2>早春新品</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_359.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_360.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_363.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd8">
+			<div class="bdt">
+				<h2>Baby&Child</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_390.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_391.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_394.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd9">
+			<div class="bdt">
+				<h2>腔调生活</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+				
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_421.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_422.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_425.png"/></a></li>
+			</ul>
+		</article>
+		<article class="bd10">
+			<div class="bdt">
+				<h2>当当优品</h2>
+				<p>
+					<span>更多</span>
+					<span>&gt;</span>
+				</p>
+			</div>
+			<ul>
+				<li><a href="#"><img src="img/Screen_452.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_453.png"/></a></li>
+				<li><a href="#"><img src="img/Screen_456.png"/></a></li>
+			</ul>
+		</article>
+		<aside class="Aside">
+			<div class="Ast">
+				<h2>主题馆</h2>
+			</div>
+			<ul>
+				<li>
+					<div class="left">
+						<p>图书</p>
+						<p>当当好书榜发布</p>
+					</div>
+					<img src="img/Screen_491.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>童书</p>
+						<p>给孩子全新视角</p>
+					</div>
+					<img src="img/Screen_497.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>女装内衣</p>
+						<p>活力&ensp;时尚&ensp;优雅</p>
+					</div>
+					<img src="img/Screen_508.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>男装</p>
+						<p>休闲&ensp;商务&ensp;潮牌</p>
+					</div>
+					<img src="img/Screen_514.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>鞋包配饰</p>
+						<p>品质&ensp;细节&ensp;潮流</p>
+					</div>
+					<img src="img/Screen_525.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>运动户外</p>
+						<p>挥洒青春</p>
+					</div>
+					<img src="img/Screen_531.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>家居家纺</p>
+						<p>我们结婚吧</p>
+					</div>
+					<img src="img/Screen_542.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>孕婴童</p>
+						<p>尿裤直降贴心价</p>
+					</div>
+					<img src="img/Screen_548.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>手机数码</p>
+						<p class="act">iphone6s同步发售</p>
+					</div>
+					<img src="img/Screen_559.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>食品</p>
+						<p>吃货挚爱美食</p>
+					</div>
+					<img src="img/Screen_565.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>美妆</p>
+						<p class="act">护肤彩妆奢养之选</p>
+					</div>
+					<img src="img/Screen_576.png"/>
+				</li>
+				<li>
+					<div class="left">
+						<p>家用电器</p>
+						<p>清新空气抗过敏</p>
+					</div>
+					<img src="img/Screen_582.png"/>
+				</li>
+			</ul>
+		</aside>
+		<footer>
+			<div class="ft">
+				<ul class="ftl">
+					<li>登录</li>
+					<li>注册</li>
+				</ul>
+				<div class="ftr">
+					<img src="img/Screen_627.png"/>
+					<span>Top</span>
+				</div>
+			</div>
+			<div class="fm">
+				<ul>
+					<li>提建议</li>
+					<li class="col">触屏版</li>
+					<li>电脑版</li>
+					<li>帮助</li>
+				</ul>
+				<p>Copyright&ensp;当当&ensp;2016m.dangdang.com</p>
+			</div>
+			<div class="fb">
+				<ul>
+					<li><img src="img/Screen_659.png"/></li>
+					<li><img src="img/Screen_664.png"/></li>
+					<li><img src="img/Screen_667.png"/></li>
+					<li><img src="img/Screen_670.png"/></li>
+					<li><img src="img/Screen_673.png"/></li>
+				</ul>
+			</div>
+		</footer>
+		
+		<script type="text/javascript">
+		//以下为：移动端横竖屏切换，无需去点击刷新，点击设备切换并自动刷新
+			(function(doc,win){//传参doc,win；函数自执行；为了每次执行时还去刷新
+				//触发事件：
+				var Resize = null;
+				//判断window.orientation是否存在，若存在给事件
+				//将事件赋给Resize
+				Resize = "orientation" in win?"orientationchange":"resize";
+				//绑定事件执行Sadaption（自适应）函数
+				win.addEventListener(Resize,Sadaption);
+				function Sadaption(){
+					var w = win.innerWidth;
+					var h = win.innerHeight;
+					//1、实际设计图/20=比值  
+					//本地实际设计图w=1080;除以40=27
+					//2、window.innerWidth/比值=rem
+					var i = w/27;   
+					doc.getElementsByTagName("html")[0].style.fontSize = i+"px";
+					var num = win.devicePixelRatio;
+					var i = win.devicePixelRatio>1?1/win.devicePixelRatio:1;
+					var meta = doc.createElement("meta");
+					meta.name = "viewport";
+					meta.content = "width=device-width,user-scalable=no,initial-scale="+i+",minimum-scale="+i+",maximum-scale="+i+"";
+					var head = doc.getElementsByTagName("head")[0];
+					head.appendChild(meta);
+					
+				}
+				
+				win.addEventListener(Resize,Sadaption);
+				doc.addEventListener(Resize,Sadaption);
+				
+				
+				
+			})(document,window);
+		</script>
+		
+		<script type="text/javascript">
+			
+			var body = document.querySelector(".body");
+			var list = body.querySelector('.list');
+			var lis = list.getElementsByTagName('li');
+			var timer = null;
+			var w = window.innerWidth;
+			
+			
+			var num = 0;
+			var now = num*w;    //当前ul的位置
+			var startx = null;
+			var movex = null;
+			var disx = null;
+			
+			list.innerHTML += list.innerHTML;
+			listWidth();
+			timer = setInterval(function(){
+				num++;
+				list.style.transform = 'translateX(-'+(w*num)+'px)';
+				if(num == 5){
+					list.style.transition = 'none';
+					list.style.transform = 'translateX(0px)';
+					num = 0;
+					setTimeout(function(){
+						num = 1;
+						list.style.transition = '1s';
+						list.style.transform = 'translateX(-'+num*w+'px)';
+					},20)				
+				}			
+			},2000)
+			
+			
+			//绑定事件
+			list.addEventListener('touchstart',start);
+			list.addEventListener('touchmove',move);
+			list.addEventListener('touchend',end)
+			
+			//手指按下
+			function start(ev){
+				ev = ev.changedTouches[0];
+				list.style.transition = 'none';
+				clearInterval(timer);   //手指按下清除定时器
+				startx = ev.pageX;      //记录手指按下时的x轴坐标
+			}
+			//手指滑动
+			function move(ev){
+				ev = ev.changedTouches[0];
+				movex = ev.pageX;       // 记录手指滑动时手指的位置
+				disx = movex - startx;  // 滑动和按下时手指的差值
+				list.style.transform = 'translateX('+(disx+now)+'px)'; //让ul在自身的位置上移动
+			}
+			//手指抬起
+			function end(){
+				now = now+disx;  			//手指抬起的时候，在记录ul当前的位置，因为ul已经跟随手指滑动，就不是整平
+				num = Math.round(now/w);	//ul已经跟随手指滑动，他的位置已经变了，当前是第几张图片
+//				console.log(now,num)
+				list.style.transition = '1s'; 
+				list.style.transform = 'translateX('+num*w+'px)'; //把ul换成整平；
+				now = num*w;
+			}
+			function listWidth(){
+				var lis = list.children;
+				list.style.width = lis.length*w + 'px';
+				for(var i=0;i<lis.length;i++){
+					lis[i].style.width = w+'px';
+				}
+			}
+			document.addEventListener('touchend',function(ev){
+				ev.preventDefault();
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,161 @@
+body header p:nth-child(1):hover {
+	background-color: white;
+	color: #2960a2;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+nav ul li a:hover {
+	padding-bottom: 25px;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
+}
+nav ul li.about a:hover {
+    background: rgba(41,96,162,1);
+}
+nav ul li.character a:hover {
+    background: rgba(219,128,41,1);
+}
+nav ul li.illustration a:hover {
+    background: rgba(193,85,141,1);
+}
+nav ul li.animation a:hover {
+    background: rgba(104,107,177,1);
+}
+nav ul li.installation a:hover {
+    background: rgba(0,182,173,1);
+}
+a.moveJoke {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-transition: all 1s ease-in-out;
+}
+a.moveJoke:hover {
+	margin-left: 25px;
+}
+a.orange:hover,a.pink:hover,a.green:hover,a.red:hover,a.purple:hover{
+	color: white;
+	text-shadow: none;
+	border-radius: 1px;
+}
+a.orange:hover {
+	background: #db8029;
+}
+a.pink:hover {
+	background: #c1558d;
+}
+a.green:hover {
+	background: #00b6ad;
+}
+a.red:hover {
+	background: #c14142;
+}
+a.purple:hover {
+	background: #686bb1;
+}
+footer ul li a img:hover {
+	-webkit-animation: sheep .4s linear;
+	animation: sheep .4s linear;
+}
+@keyframes sheep{
+    0%{padding-bottom:0;}
+    40%{padding-bottom:10px;}
+    70%{padding-bottom:0px;}
+    90%{padding-bottom:4px;}
+    100%{padding-bottom:0px;}
+}
+@-webkit-keyframes sheep{
+    0%{padding-bottom:0;}
+    40%{padding-bottom:10px;}
+    70%{padding-bottom:0px;}
+    90%{padding-bottom:4px;}
+    100%{padding-bottom:0px;}
+}
+@media screen and (min-width:1224px) and (min-height:650px) {
+	nav ul li a:hover {
+		padding-bottom: 0;
+		-webkit-transition: none;
+		-moz-transition: none;
+		-o-transition: none;
+		transition: none;
+	}
+	nav ul li:nth-child(odd):hover {
+		background-image: url(../imgs/signSprite_odd.png);
+		background-position: 0px -71px;
+	}
+	nav ul li:nth-child(even):hover {
+		background-image: url(../imgs/signSprite_even.png);
+		background-position: 0px -71px;
+	}
+	nav ul li.about a:hover,
+	nav ul li.character a:hover,
+	nav ul li.illustration a:hover,
+	nav ul li.animation a:hover,
+	nav ul li.installation a:hover{
+		background:none;
+	}
+	nav ul li.current:hover{
+		color: #675D3A;
+		background-position: 0px -144px;
+	}
+	nav ul li.about a:hover, nav ul li.about.current a {
+    	color: #2960a2;
+	}
+	nav ul li.character a:hover, nav ul li.character.current a {
+	    color: #c46e27;
+	}
+	nav ul li.illustration a:hover, nav ul li.illustration.current a {
+	    color: #c1558d;
+	}
+	nav ul li.animation a:hover, nav ul li.animation.current a {
+	    color: #686bb1;
+	}
+	nav ul li.installation a:hover, nav ul li.installation.current a {
+	    color: #00b6ad;
+	}
+	nav ul li:nth-child(odd).current a {
+        -webkit-transform: rotate(-0.25deg);
+        -moz-transform: rotate(-0.25deg);
+        -ms-transform: rotate(-0.25deg);
+        -o-transform: rotate(-0.25deg);
+    }
+    nav ul li:nth-child(even).current a {
+        -webkit-transform: rotate(-4.85deg);
+        -moz-transform: rotate(-4.85deg);
+        -ms-transform: rotate(-4.85deg);
+        -o-transform: rotate(-4.85deg);
+    }
+    nav ul li.current a{
+        padding: 21px 0 0 0;
+    }
+	@-webkit-keyframes plane{
+		0%{top: 150px;left: -150px;}
+        10%{padding-top:30px;}
+        20%{padding-top:0px;}
+        30%{padding-top:30px;}
+        40%{padding-top:0px;}
+        50%{padding-top:30px;}
+        60%{padding-top:0px;}
+        70%{padding-top:30px;}
+        80%{padding-top:0px;}
+        90%{padding-top:30px;}
+		100%{top: 150px;left: 2000px; padding-top: 0;}
+	}
+	@keyframes plane{
+		0%{top: 150px;left: -150px;}
+        10%{padding-top:30px;}
+        20%{padding-top:0px;}
+        30%{padding-top:30px;}
+        40%{padding-top:0px;}
+        50%{padding-top:30px;}
+        60%{padding-top:0px;}
+        70%{padding-top:30px;}
+        80%{padding-top:0px;}
+        90%{padding-top:30px;}
+		100%{top: 150px;left: 2000px; padding-top: 0;}
+	}
+}
